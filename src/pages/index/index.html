@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="<%= BASE_URL %>css/common.css">
+  <link rel="stylesheet" href="<%= BASE_URL %>css/element.css">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <script src="<%= BASE_URL %>projectConfig.js"></script>
+  <link rel="stylesheet" href="<%= BASE_URL %>css/nosupport.css">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<!--非chrome浏览器提示效果1-->
+<div class="noSupportBrowser" style="display: none">
+  <div class="chromeIcon">
+    <img src="<%= BASE_URL %>img/chrome.png" style="width: 250px"/>
+    <span style="text-align: center"><a href="https://pc.qq.com/search.html#!keyword=chrome">点击下载Chrome</a></span>
+  </div>
+  <div class="text">
+    <span style="margin-bottom: 10px"> 很抱歉</span><br/>
+    <span style="font-size:18px;"> 本系统暂不支持该浏览器，请您使用Chrome浏览器（V55及以上版本）访问本系统！</span>
+  </div>
+  <div class="conner"></div>
+  <div class="round1"></div>
+  <div class="round2"></div>
+  <div class="round3"></div>
+</div>
+<!--非chrome浏览器提示效果2-->
+<div class="noSupportBrowserBlack" style="display: none">
+  <div class="containerbox">
+    <div class="text">
+      <span>很抱歉，您的浏览器不符合要求</span>
+    </div>
+    <div style="margin-bottom: 30px">
+      <span>本系统暂不支持该浏览器，为了能正常体验本系统的功能，建议您使用Chrome浏览器（V55及以上版本）访问。</span>
+    </div>
+    <div>
+      <img src="<%= BASE_URL %>img/chrome.png" style="width:80px;height: 80px;"/><br/>
+      <span><a href="https://pc.qq.com/search.html#!keyword=chrome">点击下载Chrome</a></span>
+    </div>
+  </div>
+</div>
+<script src="<%= BASE_URL %>js/BrowserSupport.js"></script>
+</body>
+
+</html>
