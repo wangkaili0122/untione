@@ -18,7 +18,8 @@
   import componentMixin from './dict-component-mixins'
   export default {
     name: 'dict-radio',
-    mixins: [componentMixin]
+    mixins: [componentMixin],
+
   }
 </script>
 

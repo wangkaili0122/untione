@@ -111,7 +111,7 @@
       handleInputChange () {
         // 防止每次输入都会触发查询事件，最后焦点离开输入框时查询
         debounce(() => {
-          this.$emit('filter-table', this.formInlineData)
+          this.$emit('filter-table', this.formInlineData)//重新调接口查询
         }, 500)()
       },
       handleSelectChange () {
